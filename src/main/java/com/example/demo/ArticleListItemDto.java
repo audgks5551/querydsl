@@ -1,15 +1,13 @@
 package com.example.demo;
 
 import com.querydsl.core.types.dsl.NumberPath;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class ArticleListItemDto {

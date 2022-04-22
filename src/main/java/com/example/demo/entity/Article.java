@@ -34,7 +34,7 @@ public class Article {
     private String body;
 
     @Column(nullable = false)
-    private String memberId;
+    private Integer memberId;
 
     @Column(nullable = false)
     private String boardId;
