@@ -22,7 +22,6 @@ public class Article {
     private Long id;
 
     @Column(nullable = false)
-
     private LocalDateTime regDate;
 
     @Column(nullable = false)
@@ -42,12 +41,4 @@ public class Article {
 
     @Column(nullable = false)
     private Integer hitCount;
-
-    @ColumnDefault(value = "0")
-    @Column(nullable = false)
-    private Integer goodReactionPoint;
-
-    @ColumnDefault(value = "0")
-    @Column(nullable = false)
-    private Integer badReactionPoint;
 }

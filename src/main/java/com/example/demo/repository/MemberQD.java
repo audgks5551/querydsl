@@ -2,6 +2,7 @@ package com.example.demo.repository;
 
 import com.example.demo.entity.Member;
 
+import com.example.demo.entity.QMember;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
@@ -14,13 +15,13 @@ public class MemberQD {
 
     private final JPAQueryFactory queryFactory;
 
-//    public List<Member> findMemberAll() {
-//
-//        QMember member = QMember.member;
-//
-//        return queryFactory.selectFrom(member)
-//                .fetch();
-//    }
+    public List<Member> findMemberAll() {
+
+        QMember member = QMember.member;
+
+        return queryFactory.selectFrom(member)
+                .fetch();
+    }
 
 
 
